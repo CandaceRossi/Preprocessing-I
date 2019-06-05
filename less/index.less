@@ -56,25 +56,101 @@ table {
 html, body {
 	height: 100%;
 	box-sizing: border-box;
+	border: 2rem solid white;
+}
+.container {
+	width: 950px;
+	margin: 0 auto;
 }
 
 @glam: purple;
+@glitz: slategray;
+.padz {
+	padding: 1.5rem 1rem;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flex-right {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
 header {
-    nav {
+	width: 100%;
+	background: mistyrose;
+	border-bottom: 1px solid @glam;
+	.padz;
+	nav {
 		width: 100%;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
 	    text-decoration: none;
 		padding: 20px;
 		margin: auto;
         color: @glam;
-        font-size: 1.3rem;
-	}
+		font-size: 1.3rem;
+		display: flex;
+		justify-content: flex-end;
+		
 	a {
 		padding: 20px;
+		}
 	}
-    @media (max-width: 515px) {
+	.mid{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: space-around;
+		.flex;
+	
+	h1 {
+		font-size: 2rem;
+		color: @glitz;
+		.padz;
 		
+	}
+	h2 {
+		font-size: 1.5rem;
+		color: @glitz;
+		.padz;
+	}
+	h3 {
+		font-size: 1rem;
+		color: @glitz;
+		.padz;
+	}
+	button {
+		width: 30%;
+		height: 10%;
+		padding: 1rem 2rem;
+		font-size: 1.2rem;
+		font-family: Comic Sans MS, cursive, sans-serif;
+		text-decoration: none;
+		background: lightsteelblue;
+		border-radius: 1rem;
+		border: .50px solid @glam;
+	}
+}
+    @media (max-width: 515px) {
+		nav {
+			flex-direction: column;
+			.flex;
+		}
+		a {
+			border: 1px solid @glam;
+		}
+		
+	}
+}
+.intro {
+	p { 
+		font-size: 1.1rem;
+		color: @glam;
+		.padz;
+		border: 3rem solid @glitz;
+
 	}
 }
