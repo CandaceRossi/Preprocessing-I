@@ -143,6 +143,14 @@ body {
 .padz {
   padding: 1.5rem 1rem;
 }
+.stuck {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.polar {
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
 .flex {
   display: flex;
   justify-content: center;
@@ -155,6 +163,10 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+}
+.sidepad {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 header {
   width: 100%;
@@ -219,6 +231,11 @@ header .mid button {
   }
   header a {
     border: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 1rem;
   }
 }
 .intro p {
@@ -249,18 +266,61 @@ section .halvsies {
   align-items: center;
   padding: 1.5rem 1rem;
 }
-section .halvsies .skillsets {
+section .skillsets {
   width: 45%;
 }
-section .halvsies .skillsets h1 {
+section .skillsets h1 {
   font-size: 2rem;
-  color: slategray;
+  color: purple;
   padding: 1.5rem 1rem;
 }
-section .halvsies .skillsets h2 {
-  font-size: 2rem;
+section .skillsets h2 {
+  font-size: 1.5rem;
   color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+section .skillsets ul {
+  font-size: 1.3rem;
+  color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+section .skillsets li {
+  padding: 10px;
+}
+section .experience {
+  width: 45%;
+}
+section .experience h1 {
+  font-size: 2rem;
+  color: purple;
   padding: 1.5rem 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+section .experience h2 {
+  font-size: 1.5rem;
+  color: slategray;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+section .experience p {
+  font-size: 1.3rem;
+  color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 footer {
   width: 100%;
@@ -269,4 +329,20 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+footer p {
+  font-size: 1.5rem;
+  color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+footer .name {
+  font-size: 2rem;
+  color: purple;
+  padding: 1.5rem 1rem;
+}
+footer .media p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  text-align: right;
 }

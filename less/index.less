@@ -68,6 +68,14 @@ html, body {
 .padz {
 	padding: 1.5rem 1rem;
 }
+.stuck {
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.polar {
+	padding-bottom: 5px;
+	padding-top: 20px;
+}
 .flex {
 	display: flex;
 	justify-content: center;
@@ -80,6 +88,10 @@ html, body {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
+}
+.sidepad {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 }
 header {
 	width: 100%;
@@ -100,6 +112,7 @@ header {
 		padding: 20px;
 		}
 	}
+}
 	.mid{
 		display: flex;
 		flex-direction: column;
@@ -119,6 +132,7 @@ header {
 		.padz;
 	}
 	h3 {
+		width: 50%;
 		font-size: 1rem;
 		color: @glitz;
 		.padz;
@@ -135,17 +149,6 @@ header {
 		border: .50px solid @glam;
 	}
 }
-    @media (max-width: 515px) {
-		nav {
-			flex-direction: column;
-			.flex;
-		}
-		a {
-			border: 1px solid @glam;
-		}
-		
-	}
-}
 .intro {
 	p { 
 		font-size: 1.1rem;
@@ -153,8 +156,7 @@ header {
 		.padz;
 		border: 3rem solid @glitz;
 		text-align: center;
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
+		.sidepad;
 	}
 }
 section {
@@ -167,24 +169,88 @@ section {
 	box-sizing: border-box;
 	.flex-half;
 	.padz;
+	}
 .skillsets {
 	width: 45%; 
  h1 {
 	font-size: 2rem;
-	color: @glitz;
+	color: @glam;
 	.padz;
  }
  h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: @glitz;
-		.padz;
+		.stuck;
+		.sidepad;
  }
-}
-}
-}
+ ul {
+	 	font-size: 1.3rem;
+		color: @glitz;
+		.stuck;
+		.sidepad;
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+ }
+ li {
+	 padding: 10px;
+ }
+ }
+ .experience {
+	 width: 45%;
+h1	{
+ 	font-size: 2rem;
+	color: @glam;
+	.padz;
+	.sidepad;
+ }
+ h2 {
+		font-size: 1.5rem;
+		color: @glitz;
+		.polar;
+		.sidepad;
+ }
+ p {
+	 	font-size: 1.3rem;
+		color: @glitz;
+		.stuck;
+		.sidepad;
+ }
+ }
+
 
 footer {
 	width: 100%;
 	.padz;
 	.flex;
+	p {
+		font-size: 1.5rem;
+		color: @glitz;
+		.stuck;
+	}
+.name {
+	font-size: 2rem;
+	color: @glam;
+	.padz;
 }
+.media {
+	p {
+		.stuck;
+		text-align: right;
+	}
+}
+}
+
+ @media (max-width: 515px) {
+		nav {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+		}
+		a {
+			border: 1px solid @glam;
+			.flex;
+			.padz;
+		}
+	}
