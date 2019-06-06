@@ -128,10 +128,6 @@ header {
 	}
 }
 	.mid{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: space-around;
 		.flex;
 	
 	h1 {
@@ -176,8 +172,8 @@ header {
 section {
 	width: 100%;
 	box-sizing: border-box;
-	.flex;
-	.padz;
+	.flex-top;
+	padding: 20px;
 .halvsies {
 	width: 100%;
 	box-sizing: border-box;
@@ -209,14 +205,13 @@ section {
  li {
 	 padding: 10px;
  }
- }
+}
  .experience {
 	 width: 50%;
 h1	{
  	font-size: 2rem;
 	color: @glam;
 	.padz;
-	.sidepad;
  }
  h2 {
 		font-size: 1.5rem;
@@ -233,28 +228,44 @@ h1	{
  }
  }
 
-
 footer {
 	width: 100%;
-	.padz;
+	padding: 20px;
 	.flex;
-	p {
-		font-size: 1.5rem;
-		color: @glitz;
-		.stuck;
-	}
+.contact {
+	.flex-half;
 .name {
 	font-size: 2rem;
 	color: @glam;
 	.padz;
 }
-.media {
-	p {
-		.stuck;
-		text-align: right;
+h3 {
+	font-size: 1.2rem;
+	color: @glitz;
+	.stuck;
+	.flex-top;
 	}
 }
+.media {
+	.flex-half;
+	p {
+		.stuck;
+		.flex-top;
+		font-size: 1.2rem;
+		color: @glam;
+	}
 }
+	address {
+		h3{
+		font-size: 1.2rem;
+		color: @glitz;
+		.stuck;
+		.flex-top;
+		.padz;
+		}
+	}
+}
+
 
  @media (max-width: 515px) {
 		nav {
@@ -346,12 +357,50 @@ h1	{
 		color: @glam;
 		.polar;
  }
-}
  p {
 	 	font-size: 1rem;
 		color: @glitz;
 		.stuck;
 		.sidepad;
  }
- }
+}
 	}
+ footer {
+	width: 100%;
+	padding: 20px;
+	.flex-half;
+.contact {
+	.flex;
+.name {
+	font-size: 1rem;
+	color: @glam;
+	.padz;
+}
+h3 {
+	font-size: 1rem;
+	color: @glitz;
+	.stuck;
+	.flex;
+	}
+}
+.media {
+	.flex;
+	p {
+		.stuck;
+		.flex;
+		font-size: 1rem;
+		color: @glam;
+	}
+}
+	address {
+		h3{
+		font-size: 1rem;
+		color: @glitz;
+		.stuck;
+		.flex;
+		.padz;
+		}
+	}
+}
+}
+

@@ -202,8 +202,6 @@ header nav a {
   padding: 20px;
 }
 .mid {
-  flex-direction: column;
-  align-items: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,9 +248,9 @@ section {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 1.5rem 1rem;
+  padding: 20px;
 }
 section .halvsies {
   width: 100%;
@@ -300,8 +298,6 @@ section .experience h1 {
   font-size: 2rem;
   color: purple;
   padding: 1.5rem 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 section .experience h2 {
   font-size: 1.5rem;
@@ -321,27 +317,61 @@ section p {
 }
 footer {
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-footer p {
-  font-size: 1.5rem;
-  color: slategray;
-  padding-top: 5px;
-  padding-bottom: 20px;
+footer .contact {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
 }
-footer .name {
+footer .contact .name {
   font-size: 2rem;
   color: purple;
   padding: 1.5rem 1rem;
 }
+footer .contact h3 {
+  font-size: 1.2rem;
+  color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer .media {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
 footer .media p {
   padding-top: 5px;
   padding-bottom: 20px;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  color: purple;
+}
+footer address h3 {
+  font-size: 1.2rem;
+  color: slategray;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
 }
 @media (max-width: 515px) {
   nav {
@@ -470,12 +500,69 @@ footer .media p {
     padding-bottom: 5px;
     padding-top: 20px;
   }
-  section p {
+  section .experience p {
     font-size: 1rem;
     color: slategray;
     padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+  footer {
+    width: 100%;
+    padding: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .contact .name {
+    font-size: 1rem;
+    color: purple;
+    padding: 1.5rem 1rem;
+  }
+  footer .contact h3 {
+    font-size: 1rem;
+    color: slategray;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .media p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: purple;
+  }
+  footer address h3 {
+    font-size: 1rem;
+    color: slategray;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 1rem;
   }
 }
