@@ -82,6 +82,12 @@ html, body {
 	align-items: center;
 	flex-wrap: wrap;
 }
+.flex-top {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
 .flex-half {
 	width: 45%;
 	display: flex;
@@ -105,7 +111,6 @@ html, body {
 header {
 	width: 100%;
 	background: mistyrose;
-	border-bottom: 1px solid @glam;
 	.padz;
 	nav {
 		width: 100%;
@@ -176,11 +181,11 @@ section {
 .halvsies {
 	width: 100%;
 	box-sizing: border-box;
-	.flex-half;
+	.flex-top;
 	.padz;
 	}
 .skillsets {
-	width: 45%; 
+	width: 50%; 
  h1 {
 	font-size: 2rem;
 	color: @glam;
@@ -188,7 +193,7 @@ section {
  }
  h2 {
 		font-size: 1.5rem;
-		color: @glitz;
+		color: @glam;
 		.stuck;
 		.sidepad;
  }
@@ -206,7 +211,7 @@ section {
  }
  }
  .experience {
-	 width: 45%;
+	 width: 50%;
 h1	{
  	font-size: 2rem;
 	color: @glam;
@@ -215,7 +220,7 @@ h1	{
  }
  h2 {
 		font-size: 1.5rem;
-		color: @glitz;
+		color: @glam;
 		.polar;
 		.sidepad;
  }
@@ -296,7 +301,7 @@ footer {
 	section {
 	width: 100%;
 	box-sizing: border-box;
-	.flex;
+	.flex-top;
 .halvsies {
 	width: 100%;
 	box-sizing: border-box;
@@ -311,7 +316,7 @@ footer {
  }
  h2 {
 		font-size: 1rem;
-		color: @glitz;
+		color: @glam;
 		.stuck;
 		.sidepad;
  }
@@ -335,11 +340,10 @@ h1	{
  	font-size: 1.3rem;
 	color: @glam;
 	.padz;
-	.sidepad;
  }
  h2 {
 		font-size: 1rem;
-		color: @glitz;
+		color: @glam;
 		.polar;
  }
 }

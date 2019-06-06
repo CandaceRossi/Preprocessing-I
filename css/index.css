@@ -157,6 +157,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.flex-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .flex-half {
   width: 45%;
   display: flex;
@@ -180,7 +186,6 @@ body {
 header {
   width: 100%;
   background: mistyrose;
-  border-bottom: 1px solid purple;
   padding: 1.5rem 1rem;
 }
 header nav {
@@ -252,15 +257,14 @@ section {
 section .halvsies {
   width: 100%;
   box-sizing: border-box;
-  width: 45%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  align-items: center;
   padding: 1.5rem 1rem;
 }
 section .skillsets {
-  width: 45%;
+  width: 50%;
 }
 section .skillsets h1 {
   font-size: 2rem;
@@ -269,7 +273,7 @@ section .skillsets h1 {
 }
 section .skillsets h2 {
   font-size: 1.5rem;
-  color: slategray;
+  color: purple;
   padding-top: 5px;
   padding-bottom: 20px;
   padding-left: 2.5rem;
@@ -290,7 +294,7 @@ section .skillsets li {
   padding: 10px;
 }
 section .experience {
-  width: 45%;
+  width: 50%;
 }
 section .experience h1 {
   font-size: 2rem;
@@ -301,7 +305,7 @@ section .experience h1 {
 }
 section .experience h2 {
   font-size: 1.5rem;
-  color: slategray;
+  color: purple;
   padding-bottom: 5px;
   padding-top: 20px;
   padding-left: 2.5rem;
@@ -403,7 +407,7 @@ footer .media p {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   section .halvsies {
@@ -426,7 +430,7 @@ footer .media p {
   }
   section .skillsets h2 {
     font-size: 1rem;
-    color: slategray;
+    color: purple;
     padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 2.5rem;
@@ -459,12 +463,10 @@ footer .media p {
     font-size: 1.3rem;
     color: purple;
     padding: 1.5rem 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
   section .experience h2 {
     font-size: 1rem;
-    color: slategray;
+    color: purple;
     padding-bottom: 5px;
     padding-top: 20px;
   }
