@@ -164,6 +164,15 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+.cols {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: auto;
+}
 .sidepad {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -334,10 +343,11 @@ footer .media p {
   nav {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    padding: auto;
   }
   a {
     border-bottom: 1px solid purple;
@@ -351,11 +361,119 @@ footer .media p {
 @media (max-width: 515px) {
   .mid {
     width: 100%;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
+    padding: auto;
+  }
+  .mid h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+  .mid h2 {
+    font-size: 1.2rem;
+    display: none;
+  }
+  .mid h3 {
+    width: 45%;
+    font-size: 1rem;
+    padding: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .mid button {
+    width: 25%;
+    padding: 0.15rem 0.5rem;
+    font-size: 1rem;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    text-decoration: none;
+    background: lightsteelblue;
+    border-radius: 1rem;
+    border: 0.5px solid purple;
+  }
+  .intro {
+    display: none;
+  }
+  section {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+  section .halvsies {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: auto;
+  }
+  section .skillsets {
+    width: 100%;
+  }
+  section .skillsets h1 {
+    font-size: 1.3rem;
+    color: purple;
+    padding: 1.5rem 1rem;
+  }
+  section .skillsets h2 {
+    font-size: 1rem;
+    color: slategray;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  section .skillsets ul {
+    font-size: 1rem;
+    color: slategray;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  section .skillsets li {
+    padding: 10px;
+  }
+  section .experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: auto;
+  }
+  section .experience h1 {
+    font-size: 1.3rem;
+    color: purple;
+    padding: 1.5rem 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  section .experience h2 {
+    font-size: 1rem;
+    color: slategray;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+  section p {
+    font-size: 1rem;
+    color: slategray;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
